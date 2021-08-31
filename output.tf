@@ -1,11 +1,11 @@
-output "interactive_resource_group" {
-  value = azurerm_resource_group.interactive_resource_group[0]
+output "csp_resource_group" {
+  value = azurerm_resource_group.csp_resource_group[0]
 }
-output "interactive_resource_group_name" {
-  value = var.create_interactive_resource_group ? azurerm_resource_group.interactive_resource_group[0].name : data.azurerm_resource_group.interactive_resource_group[0].name
+output "csp_resource_group_name" {
+  value = var.create_csp_resource_group ? azurerm_resource_group.csp_resource_group[0].name : data.azurerm_resource_group.csp_resource_group[0].name
 }
-output "Interactive_resource_group_id" {
-  value = azurerm_resource_group.interactive_resource_group[0].id
+output "csp_resource_group_id" {
+  value = azurerm_resource_group.csp_resource_group[0].id
 }
 output "management_vm_availability_set_id" {
   value = azurerm_availability_set.management_vm_availability_set.id
