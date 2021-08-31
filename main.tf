@@ -10,7 +10,7 @@ locals {
 }
 
 module "interactive_standard_tags" {
-  source      = "git::https://interactive-cms-public-cloud@dev.azure.com/interactive-cms-public-cloud/Infrastructure%20as%20Code%20Templates/_git/azure-terraform-standard-tags"
+  source      = "git::https://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@github.com/wchamara/azure-terraform-standard-tags.git"
   INTCustomer = var.customer_code
 }
 
