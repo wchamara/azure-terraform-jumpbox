@@ -1,0 +1,14 @@
+trigger:
+  - main
+  
+pool:
+  vmImage: ubuntu-latest
+
+resources:
+  repositories:
+    - repository: tfmodulepipeline
+      type: git
+      name: monitoring-framework-tf-module-pipeline
+
+stages:
+- template: tf-module-pipeline.yml@tfmodulepipeline
