@@ -70,7 +70,7 @@ variable "time_zone" {
 
 variable "daily_shutdown_time" {
   type        = string
-  default     = "17.00"
+  default     = "1700"
   description = "This is the time for when the management server will be shutdown daily. It is based on the timezone defined in the <time_zone> variable."
 }
 
