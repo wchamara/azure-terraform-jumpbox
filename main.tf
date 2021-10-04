@@ -73,6 +73,7 @@ resource "azurerm_windows_virtual_machine" "management_vm" {
   admin_username        = var.admin_username
   admin_password        = var.admin_password
   availability_set_id   = azurerm_availability_set.management_vm_availability_set.id
+  zone = ""
   os_disk {
     name                 = local.os_disk_name
     caching              = "ReadWrite"
