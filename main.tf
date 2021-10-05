@@ -129,7 +129,7 @@ resource "azurerm_network_security_rule" "outbound_connectivity_to_internet" {
   source_address_prefix       = azurerm_network_interface.management_vm_nic.private_ip_address
   destination_address_prefix  = "internet"
   access                      = "allow"
-  priority                    = 500
+  priority                    = 600
   direction                   = "outbound"
   resource_group_name         = local.customer_core_resource_group_name
   network_security_group_name = var.csp_subnet_nsg_name
