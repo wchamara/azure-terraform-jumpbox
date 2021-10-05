@@ -121,8 +121,8 @@ resource "azurerm_network_security_rule" "Allow_RDP_to_Jumpbox" {
 }
 
 resource "azurerm_network_security_rule" "outbound_connectivity_to_internet" {
-  name                        = "outbound_connectivity_to_customer_Subnets"
-  description                 = "outbound_connectivity_to_customer_Subnets"
+  name                        = "outbound_connectivity_to_internet"
+  description                 = "outbound_connectivity_to_internet"
   protocol                    = "*"
   source_port_range           = "*"
   destination_port_ranges     = [80, 443]
